@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lista sa nestalima</title>
+</head>
+<body>
+<h2>Nestala osoba</h2>
+
+<div class="container w-[100%]">
+  <img [src]="missingReportImage" alt="ime i prezime osobe" style="width:100%">
+  <div class="container">
+    <h4><b [innerHTML]="missingRecordName"></b></h4>
+    <div> Report
+      <div [innerHTML]="missingRecordReport">
+      </div>
+    </div>
+    <div> Opis kida
+      <div [innerHTML]="missingReportDescription">
+      </div>
+    </div>
+    <p>Grad odakle je i mesto nestanka (grad ili mozda i preciznije)</p>
+  </div>
+</div>
+
+</body>
+</html>
